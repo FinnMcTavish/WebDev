@@ -64,7 +64,7 @@
 .aboutus{
     display: flex;
     flex-direction: row;
-    background-color: tomato;
+    background-color: white;
     
 }
 .aboutus p,.aboutus h2{
@@ -74,9 +74,8 @@
     bottom: 0;
     color: white;
 }
-.aboutus img{
-    display: flex;
-    width: fit-content;
+#Aboutus{
+    background-color: tomato;
 }
 .domain{
     background-color: yellowgreen;
@@ -174,4 +173,17 @@
     text-align: center;
     padding: 13px;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 900px){
+.header ul li{
+    display: none;
+}
+body{
+    width: 100%;
+}
+.aboutus{
+    flex-direction: column;
+}
+
 }
